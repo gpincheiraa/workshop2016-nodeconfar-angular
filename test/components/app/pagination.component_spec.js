@@ -22,7 +22,7 @@ describe('Pagination Controller', () => {
             data: dataSample,
             size: 5
         })
-        controller.constructor() //should be automatic with $componentController
+        controller.$onInit()
     }))
 
     it('should call paginate method on $onInit', () => {
